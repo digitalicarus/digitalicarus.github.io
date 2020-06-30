@@ -1,0 +1,130 @@
+html, body { 
+	font-family: 'Montserrat'; 
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	background-image: url('../assets/lightpaperfibers/lightpaperfibers_@2x.png');
+	font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    line-height: 1.8em;
+}
+
+.main-container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.main-container > header {
+	display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.main-container > header .personal-info {
+    padding: 20px 0;
+    padding-right: 120px;
+    background-image: url(./assets/profile.png);
+    background-size: auto 100px;
+    background-repeat: no-repeat;
+    background-position: right;
+    text-align: right;
+}
+
+.main-container > header h1 {
+	margin: 0;
+	font-weight: 600;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+}
+
+h1, h2, h3 {
+	font-weight: 300;
+	letter-spacing: -0.1rem;
+	position: relative;
+}
+
+h1 { 
+    font-size: 4rem;
+    line-height: 4rem;
+	margin: 40px 0 20px 0;
+}
+h2 { 
+	font-size: 3.2rem; 
+	line-height: 3.2rem;
+	font-weight: 400; 
+	margin: 0;
+}
+h3 { 
+	font-size: 2.5rem; 
+	line-height: 2.5rem;
+	margin: 20px 0;
+}
+
+main h1:after {
+	display: block;
+	content: '';
+    width: 100%;
+    height: 1px;
+    margin: 20px 0;
+    background: #ddd;
+    background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0, rgb(255,255,255)), color-stop(0.1, rgb(221,221,221)), color-stop(0.9, rgb(221,221,221)), color-stop(1, rgb(255,255,255)) );
+    background-image: -moz-linear-gradient( left center, rgb(255,255,255) 0%, rgb(221,221,221) 10%, rgb(221,221,221) 90%, rgb(255,255,255) 100% );
+}
+
+.work-history-record header {
+	position: relative;
+	margin: 30px 0 30px 60px;
+	line-height: 2rem;
+}
+.work-history-record header aside {
+    font-weight: 300;
+}
+
+.work-history-record header:before {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -50px;
+	width: 40px;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-size: auto 40px;
+	background-position: center;
+}
+.work-history-record.paypal header:before {
+	background-image: url('./assets/paypal-logo.svg');
+}
+.work-history-record.hp header:before {
+	background-image: url('./assets/hp-logo.svg');
+}
+.work-history-record.eso header:before {
+	background-image: url('./assets/eso-logo.svg');
+	background-size: 50px auto;
+	width: 50px;
+	height: 30px;
+	left: -60px;
+}
+
+.project {
+	margin-left: 60px;
+}
+.project h3:before {
+	display: block;
+	content: '';
+	background-image: url('./assets/project-icon.svg');
+    /*padding-left: 40px;*/
+    background-repeat: no-repeat;
+    background-position: left 5px center;
+    background-size: 26px;
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    left: -44px;
+    top: -2px;
+}
+
