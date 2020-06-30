@@ -5,7 +5,7 @@ html {
 	font-size: 62.5%;
 }
 body {
-	background-image: url('../assets/lightpaperfibers/lightpaperfibers_@2x.png');
+	background-image: url('../assets/lightpaperfibers/lightpaperfibers2x.png');
 	font-size: 1.5em;
     font-weight: 400;
     letter-spacing: 0.01em;
@@ -21,7 +21,7 @@ body {
 	display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .main-container > header .personal-info {
