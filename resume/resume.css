@@ -1,4 +1,4 @@
-html, body { 
+h3html, body { 
 	font-family: 'Montserrat'; 
 	box-sizing: border-box;
 }
@@ -19,14 +19,21 @@ body * {
 .main-container {
 	width: 900px;
 	margin: 0 auto;
+	position: relative;
+}
 
+.resume-url {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .main-container > header {
 	display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin-top: 40px;
+    padding-top: 20px;
 }
 
 .objective {
@@ -88,6 +95,9 @@ h3 {
 	margin: 20px 0;
 }
 
+main h1 {
+	break-inside: avoid;
+}
 main h1:after {
 	display: block;
 	content: '';
@@ -99,11 +109,7 @@ main h1:after {
     background-image: -moz-linear-gradient( left center, rgb(255,255,255) 0%, rgb(221,221,221) 10%, rgb(221,221,221) 90%, rgb(255,255,255) 100% );
 }
 
-section.education .section-content {
-	position: relative;
-	margin-left: 60px;
-}
-section.education .section-content:before {
+section.education header:before {
 	display: block;
 	content: '';
 	background-image: url('./assets/ou-logo.svg');
@@ -115,13 +121,23 @@ section.education .section-content:before {
     background-repeat: no-repeat;
     background-position: center;
 }
+section.education h3 {
+	margin: 0;
+	font-weight: 400;
+}
+section.education .section-content header {
+	margin-bottom: 10px;
+}
+section.education .section-content ul {
+	margin: 0 0 0 20px;
+}
 
-.work-history-record header {
+.work-history-record header, .education header {
 	position: relative;
 	margin: 30px 0 30px 60px;
-	line-height: 2rem;
+	line-height: 2.2rem;
 }
-.work-history-record header aside {
+.work-history-record header aside, .education header aside {
     font-weight: 300;
 }
 
@@ -130,7 +146,7 @@ section.education .section-content:before {
 	content: '';
 	position: absolute;
 	top: 0;
-	left: -50px;
+	left: -60px;
 	width: 40px;
 	height: 40px;
 	background-repeat: no-repeat;
@@ -145,12 +161,13 @@ section.education .section-content:before {
 }
 .work-history-record.eso header:before {
 	background-image: url('./assets/eso-logo.svg');
-	background-size: 44px auto;
+	background-size: 40px auto;
 	width: 50px;
 	height: 50px;
-	left: -60px;
+	left: -65px;
 	background-color: white;
-	box-shadow: 0 0 1px #555;
+	border: 1px solid #ddd;
+	border-radius: 50px;
 }
 
 .work-history-record .project {
@@ -159,8 +176,9 @@ section.education .section-content:before {
 .project h3:before {
 	display: block;
 	content: '';
-	background-image: url('./assets/project-icon.svg');
-    /*padding-left: 40px;*/
+
+	/*background-image: url('./assets/project-icon.svg');*/
+	background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzMwMHB4JyB3aWR0aD0nMzAwcHgnICBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTAgNTAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZmlsbD0iIzAwMDAwMCIgZD0iTTUuODYsMzQuNjExbDE1LjkyNi0xMy45NjdjLTEuMDMyLTQuMjk3LDAuMzI1LTkuMDI1LDMuODYyLTEyLjE4ICBjNC4wMjItMy41MzEsOS42NzUtMy45MTMsMTQuMTMtMS40NjdsLTUuOTc5LDUuMjE5bDUuMzg1LDYuMTk3bDUuOTc1LTUuMjcxYzEuOTA3LDQuNzI4LDAuNzExLDEwLjI3My0zLjMxMywxMy44MDggIGMtMy41MzQsMy4xNS04LjM2OSwzLjg1OS0xMi41MDEsMi4yMjZMMTMuNDEyLDQzLjE0NmMtMi4zODgsMi4wNjktNS45NzcsMS44NS04LjA0LTAuNDg5bDAsMEMzLjMwNyw0MC4zMjEsMy41MjEsMzYuNjgsNS44NiwzNC42MTEgIEw1Ljg2LDM0LjYxMXogTTkuMDEyLDM2LjQ1OGMtMC45NzYsMC44MTctMS4wMzEsMi4yMzEtMC4yMTgsMy4yMDljMC44MTgsMC45MjMsMi4yODEsMS4wMzQsMy4yMTIsMC4xNjMgIGMwLjkyMS0wLjgxNCwxLjAzMS0yLjIyOSwwLjIxMi0zLjIwNUMxMS4zNTEsMzUuNyw5LjkzOCwzNS41OTMsOS4wMTIsMzYuNDU4eiI+PC9wYXRoPjwvc3ZnPg==");
     background-repeat: no-repeat;
     background-position: left 5px center;
     background-size: 26px;
@@ -171,9 +189,11 @@ section.education .section-content:before {
     top: -2px;
 }
 
-
 section.personal-projects .project {
 	margin-left: 40px;
+}
+section.personal-projects .project h3:before {
+	background-image: url('../assets/wing.svg');
 }
 
 @media screen and (max-width: 1024px) {
@@ -185,7 +205,6 @@ section.personal-projects .project {
 	.main-container > header {
 		flex-direction: column-reverse;
 		align-items: center;
-		margin-top: 20px;
 	}
 	.main-container > header .personal-info {
 		padding: 100px 0 0 0;
@@ -199,8 +218,10 @@ section.personal-projects .project {
 		max-width: 700px;
 		text-align: center;
 	}
+}
 
-	.work-history-record .project {
-		margin-left: 40px;
+@media print {
+	.resume-url {
+		display: block;
 	}
 }

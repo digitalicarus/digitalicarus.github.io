@@ -10,360 +10,364 @@
 	</head>
 	<body>
 		<div class="main-container">
-		<header>
-			<section class="objective">
-				I constantly nurture my technical and creative expertise in computing and technical topics. 
-				I'm a self-starter, capable of adapting and learning anything very quickly. 
-				As a hobbyist, my leisure activities often enhance my performance at work.
-			</section>
-			<section class="personal-info">
-				<h1 class="name">Adam Horton</h1>
-				<address>
-					Austin, TX
-				</address>
-				<div class="links">
-					<a target="_blank" href="https://github.com/digitalicarus">GitHub</a>
-					<a target="_blank" href="https://twitter.com/digitalicarus">Twitter</a>
-					<a target="_blank" href="https://www.linkedin.com/in/adamhorton/">LinkedIn</a>
-				</div>
-			</section>
-		</header>
-		<main>
-			<section class="education">
-				<h1>Education</h1>
-				<div class="section-content">
-					<strong>Bachelor of Science in Computer Engineering</strong>
-					<aside>University of Oklahoma &mdash; December 2006</aside>
-					<ul>
-						<li>Digital Design Lab &mdash; microcontrollers and circuits</li>
-						<li>Operating Systems &mdash; application interfaces, process scheduling, memory mapping</li>
-						<li>Computer Architecture &mdash; Pentium-like architecture, pipelines, C &harr;&#xFE0E; assembly</li>
-					</ul>
-				</div>
-			</section>
-			<!--<section class="skills">
-				<h1>Skills</h1>
-				<div class="section-content">
-				</div>
-			</section> -->
-			<section class="work-history">
-				<h1>Work History</h1>
-				<div class="section-content">
-					<article class="work-history-record eso">
+			<a class="resume-url" href=".">http://digitalicarus.com/resume</a>
+			<header>
+				<section class="objective">
+					I constantly nurture my creative expertise in computing and technical topics. 
+					I'm a self-starter, capable of adapting and learning anything very quickly. 
+					As a hobbyist, my leisure activities often enhance my performance at work.
+				</section>
+				<section class="personal-info">
+					<h1 class="name">Adam Horton</h1>
+					<address>
+						Austin, TX
+					</address>
+					<div class="links">
+						<a target="_blank" href="https://github.com/digitalicarus">GitHub</a>
+						<a target="_blank" href="https://twitter.com/digitalicarus">Twitter</a>
+						<a target="_blank" href="https://www.linkedin.com/in/adamhorton/">LinkedIn</a>
+					</div>
+				</section>
+			</header>
+			<main>
+				<section class="education">
+					<h1>Education</h1>
+					<div class="section-content">
 						<header>
-							<h2>Staff Software Engineer</h2>
-							<strong>ESO Solutions</strong>
-							<aside> September 2013 &mdash; Present</aside>
+							<h2>Bachelor of Science in Computer Engineering</h2>
+							<strong>University of Oklahoma</strong>
+							<aside>December 2006</aside>
 						</header>
- 
-						<div class="project">
-							<h3>ESO Analytics</h3>
-							<p>
-								An analytics app for viewing EMS data from an OLAP database.
-								Used AngularJS and HighCharts to display line and bar graphs as well as drill
-								through reports.
-							</p>
-						</div>  
-						<div class="project">
-							<h3>Patient Outcomes</h3>
-							<p>
-								An AngularJS app for displaying HL7 outcome information recieved from a hospital and
-								linking it to EMS records in order to get a more complete picture of the continuum of care.
-								<br/>
-								This includes a view tracking system to remember which EMS providers had viewed each 
-								outcome.
-								<br/>
-								The report viewer is a split view that renders the outcome information and the PCR side-by-side
-								using Mozilla's PDFJS.
-							</p>
-						</div>  
-						<div class="project">
-							<h3>EHR</h3>
-							<p>
-								EHR is the flagship application of the company. 
-								It is used to document EMS patient encounters in the field.
-								This fifth revision is the first JavaScript version of the product.
-								It uses AngularJS and has a host of complex custom controls and input formats such
-								as:
-							</p>
-							<ul>
-								<li>Several modal types &mdash; shelf, dialog, (Texas) toaster dialogs for branching input contexts.</li>
-								<li>A 3D anatomical family of models that can be intertially rotated with RXJS and marked with injuries and ailments.</li>
-								<li>A JavaScript based injection rules system. Clicking an error asynchonously navigates to any field on any screen and activates it.</li>
-								<li>Searchable single and multi select panels.</li>
-								<li>A vitals capturing system with animated face pain scale.</li>
-								<li>A quick-entry treatment, assessment, and alert system with dynamically generated lightning effect using a 2 dimensional midpoint displacement algorithm.</li>
-							</ul>
-							<p>
-								This would later become the seed for the ESO Angular Core controls project.<br/>
-								I wrote a majority of the front-end including the 3D anatomical family, vitals capture, lightning effect, and many of the custom controls.
-							</p>
-						</div>  
-						<div class="project">
-							<h3>ESO Admin</h3>
-							<p>
-								This is an administrative console for self-service management of all the application at the company.
-								It was completely rewritten using a site-map strategy with a fuzzy search index. This application
-								uses the core component framework, ESO Angular Core, developed in AngularJS.
-							</p>
-						</div>  
-						<div class="project">
-							<h3>ESO Fire Incidents</h3>
-							<p>
-								Next to EHR, this is the second most complex front-end application in the company. The most interesting
-								aspect of this app is dynamic validation on every front-end value change. The number of rules potentially
-								run on a keystroke can be hundreds and a full validation set in the thousands. All the rules are run 
-								using an injection technique for the data, each being a pure function. The rules are run in a web worker
-								so that there is no performance effect on the UI thread while the user interacts with the application.
-								This application was the first to use the AngularJS core component framework, ESO Angular Core, distilled from EHR.
-							</p>
-						</div>  
-						<div class="project">
-							<h3>ESO Fire Inspections</h3>
-							<p>
-								Used for fire inspections of any kind of property such as a restaurant, apartment complex, etc.
-								The most interesting aspect of this application was a massive set of fire codes downloaded to the front-end
-								and indexed for fuzzy searching within a trie data structure. This application uses AngularJS and ESO Angular Core.
-							</p>
-						</div>  
-						<div class="project">
-							<h3>ESO Activities</h3>
-							<p>
-								This application is a way for fire and EMS organizations to document community events and 
-								operational activities at their stations. It uses Angular 10 and the associated ESO Core framework.
-							</p>
-						</div>  
-						<div class="project">
-							<h3>ESO Login and Identity Service</h3>
-							<p>
-								This is a complete rewrite of the Log In experience to accomodate SSO and two factor authentication.
-								I wrote all the front-end and web flows. It uses Angular 10 and ESO Core.
-							</p>
-						</div>  
-						<div class="project">
-							<h3>ESO Patient Tracker</h3>
-							<p>
-								This application is used at the hospital to see incoming EMS patients. It is also used from the hospital 
-								perspective to associate patient outcomes at the hospital with ePCR records.
-							</p>
-						</div>  
-						<div class="project">
-							<h3>ESO Angular Core</h3>
-							<p>
-								This is a complete custom component framework for ESO applications written using AngularJS. Components include
-								text, number, and date inputs and calendar pickers with custom validation, many modal types, masked inputs,
-								single and multi-select components with search indexing, a signature input component using RXJS, and many others..
-								<br/>
-								I also wrote a documentation generator using the same generation framework as the AngularJS project, dgeni.
-							</p>
-						</div>  
-						<div class="project">
-							<h3>ESO Core</h3>
-							<p>
-								ESO Core is a port and evolution of the ESO Angular Core framework but using Angular 10+ and very idiomatic
-								Angular. Any web developer familiar with Angular can use Core quite easily as it implements Control Value Accessor
-								and other appropriate interfaces for input control types.
-							</p>
-						</div>  
-					</article> 
- 
-					<article class="work-history-record paypal">
-						<header>
-							<h2>Senior Front-end Engineer</h2>
-							<strong>PayPal</strong>
-							<aside> April 2010 &mdash; September 2013</aside>
-						</header>
+						<ul>
+							<li>Digital Design Lab &mdash; microcontrollers and circuits</li>
+							<li>Operating Systems &mdash; application interfaces, process scheduling, memory mapping</li>
+							<li>Computer Architecture &mdash; Pentium-like architecture, pipelines, C &harr;&#xFE0E; assembly</li>
+						</ul>
+					</div>
+				</section>
+				<!--<section class="skills">
+					<h1>Skills</h1>
+					<div class="section-content">
+					</div>
+				</section> -->
+				<section class="work-history">
+					<h1>Work History</h1>
+					<div class="section-content">
+						<article class="work-history-record eso">
+							<header>
+								<h2>Staff Software Engineer</h2>
+								<strong>ESO Solutions</strong>
+								<aside> September 2013 &mdash; Present</aside>
+							</header>
+	
+							<div class="project">
+								<h3>ESO Analytics</h3>
+								<p>
+									ESO Analytics presents visualizations of EMS data from an OLAP database.
+									It uses AngularJS and HighCharts to display line and bar graphs as well as 
+									tabular drill-through reports.
+								</p>
+							</div>  
+							<div class="project">
+								<h3>Patient Outcomes</h3>
+								<p>
+									Patient Outcomes is an AngularJS app for displaying HL7 outcome information recieved from a hospital. 
+									The outcome information is linked to EMS records to present a more complete picture of the continuum of care.
+									<br/>
+									It includes a view tracking system to remember which EMS providers had viewed each 
+									outcome.
+									<br/>
+									The report viewer is a mobile capable split view that renders the outcome information and the PCR side-by-side
+									using Mozilla's PDFJS.
+								</p>
+							</div>  
+							<div class="project">
+								<h3>EHR</h3>
+								<p>
+									EHR is the flagship application of the company. 
+									It is used to document EMS patient encounters in the field.
+									This fifth revision is the first JavaScript version of the product.
+									It uses AngularJS and has a host of complex custom controls and input formats such
+									as:
+								</p>
+								<ul>
+									<li>Several modal types &mdash; shelf, dialog, and (Texas) toaster dialogs for branching input contexts.</li>
+									<li>A 3D anatomical family of models that can be intertially rotated with RXJS and marked with injuries and ailments.</li>
+									<li>A JavaScript-based injectable rules system. Clicking an error asynchonously navigates to any field on any screen and activates it.</li>
+									<li>Searchable single and multi-select panels.</li>
+									<li>A vitals capturing system with animated face pain scale.</li>
+									<li>A quick-entry treatment, assessment, and alert system with dynamically generated lightning effect using a 2 dimensional midpoint displacement algorithm.</li>
+								</ul>
+								<p>
+									This would later become the seed for the ESO Angular Core controls project.<br/>
+									I wrote a majority of the front-end including the 3D anatomical family, vitals capture, lightning effect, and many of the custom controls.
+								</p>
+							</div>  
+							<div class="project">
+								<h3>ESO Admin</h3>
+								<p>
+									This is an administrative console for self-service management of all the application at the company.
+									It was completely rewritten using a site-map strategy with a fuzzy search index. This application
+									uses the core component framework, ESO Angular Core, developed in AngularJS.
+								</p>
+							</div>  
+							<div class="project">
+								<h3>ESO Fire Incidents</h3>
+								<p>
+									Next to EHR, this is the second most complex front-end application in the company. The most interesting
+									aspect of this app is dynamic validation on every front-end value change. The number of rules potentially
+									run on a keystroke can be hundreds and a full validation set in the thousands. All the rules are run 
+									using an injection technique for the data, each being a pure function. The rules are run in a web worker
+									so that there is no performance effect on the UI thread while the user interacts with the application.
+									This application was the first to use the AngularJS core component framework, ESO Angular Core, distilled from EHR.
+								</p>
+							</div>  
+							<div class="project">
+								<h3>ESO Fire Inspections</h3>
+								<p>
+									Used for fire inspections of any kind of property such as a restaurant, apartment complex, etc.
+									The most interesting aspect of this application was a massive set of fire codes downloaded to the front-end
+									and indexed for fuzzy searching within a trie data structure. This application uses AngularJS and ESO Angular Core.
+								</p>
+							</div>  
+							<div class="project">
+								<h3>ESO Activities</h3>
+								<p>
+									This application is a way for fire and EMS organizations to document community events and 
+									operational activities at their stations. It uses Angular 10 and the associated ESO Core framework.
+								</p>
+							</div>  
+							<div class="project">
+								<h3>ESO Login and Identity Service</h3>
+								<p>
+									This is a complete rewrite of the log-in experience to accomodate SSO and two factor authentication.
+									I wrote all the front-end and web flows. It uses Angular 10 and ESO Core.
+								</p>
+							</div>  
+							<div class="project">
+								<h3>ESO Patient Tracker</h3>
+								<p>
+									This application is used at the hospital to see incoming EMS patients. It is also used from the hospital 
+									perspective to associate patient outcomes at the hospital with ePCR records.
+								</p>
+							</div>  
+							<div class="project">
+								<h3>ESO Angular Core</h3>
+								<p>
+									This is a complete custom component framework for ESO applications written using AngularJS. Components include
+									text, number, and date inputs and calendar pickers with custom validation, many modal types, masked inputs,
+									single and multi-select components with search indexing, a signature input component using RXJS, and many others.
+									<br/>
+									I also wrote a documentation generator using the same generation framework as the AngularJS project, dgeni.
+								</p>
+							</div>  
+							<div class="project">
+								<h3>ESO Core</h3>
+								<p>
+									ESO Core is a port and evolution of the ESO Angular Core framework but using Angular 10+ and very idiomatic
+									Angular. Any web developer familiar with Angular can use Core easily as it implements Control Value Accessor
+									and other appropriate interfaces for input control types.
+								</p>
+							</div>  
+						</article> 
+	
+						<article class="work-history-record paypal">
+							<header>
+								<h2>Senior Front-end Engineer</h2>
+								<strong>PayPal</strong>
+								<aside> April 2010 &mdash; September 2013</aside>
+							</header>
 
-						<div class="project">
-							<h3>Internal Developer API Portal</h3>
-							<p>
-								This portal was a way to aggregate the many sources of internal API documentation at the company.
-								A database aggregated many forms of API documentation into an abstract form and a Node 
-								backend generated a unified view of all of the documents as well as links back to original
-								resources.
-							</p>
-						</div>  
-						<div class="project">
-							<h3>3rd Party JS Suite</h3>
-							<p>
-								This was a POC that I created for the purpose of making 3rd party applications at PayPal
-								easy to create, deploy, and test. It integrated EasyXDM for more advanced cross domain
-								communication on a 3rd party merchant site through several early pre-CORS cross domain
-								techniques.
-							</p>
-						</div> 
-						<div class="project">
-							<h3>PayPal Identity &mdash; Log In with PayPal</h3>
-							<p>
-								The PayPal Identity project was a system to provide not only PayPal log in to 3rd parties, 
-								but also a risk system that could identify fraud. The original notion of this is to 
-								bring a verified financial element to federated identity. Merchants using PayPal as an
-								identity provider would know that authenticated users weren't fraudulent and had valid
-								financial instruments protected by PayPal in order to shop.
-							</p>
-							<p>
-								I did the user interfaces for the log in and verification web flows, the
-								cross domain JavaScript code for integration on the 3rd party site, and created 
-								training material and demos of developer APIs and implementation of the product.
-							</p>
-						</div> 
-						<div class="project">
-							<h3>Adaptive Payments</h3>
-							<p>
-								Adaptive Payment is a PayPal payments platform that enables a consumer to craft
-								many complex payment scenarios such as parallel and chained payments through an API.
-								It allows merchants and contractors to split payments to be fulfilled
-								in parallel with configurable amounts for each recipient. It also supports chained 
-								payments for scenarios like subcontracting. 
-							</p>
-							<p>
-								My job was to supply the web flows and email content which explained and guided end-users through
-								these more complex payment flow processes. Progressive enhancement was used so that all web flows
-								worked without JavaScript but were enhanced with it. All web flows were fully localized including
-								right-to-left support for support in Israel.
-							</p>
-							<p>
-								Developed JavaScript bookmarklets for development and testing in 3rd party JS scenarios and wrote
-								a suite of Bash scripts to navigate a complex development environment topology.
-							</p>
-						</div>
-					</article> 
- 
-					<article class="work-history-record hp">
-						<header>
-							<h2>Manageability Firmware Developer</h2>
-							<strong>Hewlett-Packard</strong>
-							<aside>August 2007 &mdash; March 2010</aside>
-						</header>
- 
-						<div class="project">
-							<h3>Superdome 2 Onboard Administrator</h3>
-							<p>
-								Created a before-its-time web application for system management on the HP Integrity Superdome 2. 
-								The Superdome 2 is a high-end cellular blade system with configurable electrically isolated partitioning.
-								This machine was completely new and the interface was developed alongside the hardware and firmware.
-								A small single-board computer manages the entire system of up to two cabinets with 16 blades.
-								The computer is an embedded linux computer built around a PowerPC system on chip.
-								This computer and the web application is known commercially as the Onboard Administrator (OA).
-							</p>
-							<p>
-								Much of the mid-tier portions of this project were outsourced.
-								I organized the work and was effectively the project manager for the entirety of the web management interface.
-							</p>
-							<p>
-								The development environment was Linux x86 where C and C++ code was cross compiled to PowerPC. 
-								The web interface consisted of HTML, JavaScript, XML, XSLT, and CSS. 
-								This predates the use of MVC web frameworks and supported browsers back to IE6.
-								The web client uses XHR and communicates with a C-based gSOAP binary through CGI.
-								This C binary communicates with various system management firmware Linux applications to retrieve 
-								health statuses, general information, cooling status, thermal data, and configuration data for 
-								all of the components.
-							</p>
-							<p>
-								This SOAP binary also provides the interface with commands used to change system settings and configuration.
-							</p>
-							<p>
-								I developed a mock application in C for the SOAP interface that also managed client user sessions.
-								The mock application allowed the web UI to be developed ahead of all of the system monitoring and configuration firmware application.
-								This application used a Perl SOAP deserializer called Expat to manipulate data into interesting XML responses used to unit test and debug the "DHTML" web client. 
-								I devised an embedded test application within the product itself which intercepted polled system events (XHR long polling).
-								It presented an editor in the browser where the XML could be modified before resuming the subscribed code that consumed responses.
-							</p>
-							<p>
-								Surprisingly, this product was not assigned a designer.
-								I created the photographic representations of all the server components complete with 
-								dynamic device presence and health indicators (images of devices, blinking LEDs, status icons, etc).
-								The visualization represented exactly what a technician would see when they approached the machine
-								in the datacenter.
-							</p>
-						</div>
-					</article> 
- 
-					<article class="work-history-record hp">
-						<header>
-							<h2>Firmware Test Engineer</h2>
-							<strong>Hewlett-Packard</strong>
-							<aside>January 2007 &mdash; August 2007</aside>
-						</header>
- 
-						<div class="project">
-							<h3>Superdome 2 Management Firmware Test Infrastructure</h3>
-							<p>
-								Used Perl and MySQL to design, implement, and maintain a test infrastructure which supported other test developers.
-							</p>
-							<p>
-								Designed and implemented a MySQL schema for test log storage and result analytics web applications. 
-								Database design was optomized to 4th normal form using knowledge and techniques from Database in Depth by CJ Date. 
-								Date was a protegé of the father of the relational model, EF Codd. 
-								Database was tuned using diagnostic tools and techniques like MyTop, query cache monitoring, and cache sizing modifications.
-							</p>
-							<p>
-								Test results, metrics displays, and triage data were presented and edited from small web applications. 
-								These smal web applications were also built using Perl, MySQL, CSS, HTML, and JavaScript.
-							</p>
-						</div>
-					</article> 
+							<div class="project">
+								<h3>Internal Developer API Portal</h3>
+								<p>
+									This portal was a way to aggregate the many sources of internal API documentation at the company.
+									A database aggregated many forms of API documentation into an abstract form and a Node 
+									backend generated a unified view of all of the documents as well as links back to original
+									resources.
+								</p>
+							</div>  
+							<div class="project">
+								<h3>3rd Party JS Suite</h3>
+								<p>
+									This was a POC that I created for the purpose of making 3rd party applications at PayPal
+									easy to create, deploy, and test. It integrated EasyXDM for more advanced cross domain
+									communication on a 3rd party merchant site through several early pre-CORS cross domain
+									techniques.
+								</p>
+							</div> 
+							<div class="project">
+								<h3>PayPal Identity &mdash; Log In with PayPal</h3>
+								<p>
+									The PayPal Identity project was a system to provide not only PayPal log in to 3rd parties, 
+									but also a risk system that could identify fraud. The original notion of this is to 
+									bring a verified financial element to federated identity. Merchants using PayPal as an
+									identity provider would know that authenticated users weren't fraudulent and had valid
+									financial instruments protected by PayPal in order to shop.
+								</p>
+								<p>
+									I did the user interfaces for the log in and verification web flows, the
+									cross domain JavaScript code for integration on the 3rd party site, and created 
+									training material and demos of developer APIs and implementation of the product.
+								</p>
+							</div> 
+							<div class="project">
+								<h3>Adaptive Payments</h3>
+								<p>
+									Adaptive Payment is a PayPal payments platform that enables a consumer to craft
+									many complex payment scenarios such as parallel and chained payments through an API.
+									It allows merchants and contractors to split payments to be fulfilled
+									in parallel with configurable amounts for each recipient. It also supports chained 
+									payments for scenarios like subcontracting. 
+								</p>
+								<p>
+									My job was to supply the web flows and email content which explained and guided end-users through
+									these more complex payment flow processes. Progressive enhancement was used so that all web flows
+									worked without JavaScript but were enhanced with it. All web flows were fully localized including
+									right-to-left support for support in Israel.
+								</p>
+								<p>
+									Developed JavaScript bookmarklets for development and testing in 3rd party JS scenarios and wrote
+									a suite of Bash scripts to navigate a complex development environment topology.
+								</p>
+							</div>
+						</article> 
+	
+						<article class="work-history-record hp">
+							<header>
+								<h2>Manageability Firmware Developer</h2>
+								<strong>Hewlett-Packard</strong>
+								<aside>August 2007 &mdash; March 2010</aside>
+							</header>
+	
+							<div class="project">
+								<h3>Superdome 2 Onboard Administrator</h3>
+								<p>
+									Created a before-its-time web application for system management on the HP Integrity Superdome 2. 
+									The Superdome 2 is a high-end cellular blade system with configurable electrically isolated partitioning.
+									This machine was completely new and the interface was developed alongside the hardware and firmware.
+									A small single-board computer manages the entire system of up to two cabinets with 16 blades.
+									The computer is an embedded linux computer built around a PowerPC system on chip.
+									This computer and the web application is known commercially as the Onboard Administrator (OA).
+								</p>
+								<p>
+									Much of the mid-tier portions of this project were outsourced.
+									I organized the work and was effectively the project manager for the entirety of the web management interface.
+								</p>
+								<p>
+									The development environment was Linux x86 where C and C++ code was cross compiled to PowerPC. 
+									The web interface consisted of HTML, JavaScript, XML, XSLT, and CSS. 
+									This predates the use of MVC web frameworks and supported browsers back to IE6.
+									The web client uses XHR and communicates with a C-based gSOAP binary through CGI.
+									This C binary communicates with various system management firmware Linux applications to retrieve 
+									health statuses, general information, cooling status, thermal data, and configuration data for 
+									all of the components.
+								</p>
+								<p>
+									This SOAP binary also provides the interface with commands used to change system settings and configuration.
+								</p>
+								<p>
+									I developed a mock application in C for the SOAP interface that also managed client user sessions.
+									The mock application allowed the web UI to be developed ahead of all of the system monitoring and configuration firmware application.
+									This application used a Perl SOAP deserializer called Expat to manipulate data into interesting XML responses used to unit test and debug the "DHTML" web client. 
+									I devised an embedded test application within the product itself which intercepted polled system events (XHR long polling).
+									It presented an editor in the browser where the XML could be modified before resuming the subscribed code that consumed responses.
+								</p>
+								<p>
+									Surprisingly, this product was not assigned a designer.
+									I created the photographic representations of all the server components complete with 
+									dynamic device presence and health indicators (images of devices, blinking LEDs, status icons, etc).
+									The visualization represented exactly what a technician would see when they approached the machine
+									in the datacenter.
+								</p>
+							</div>
+						</article> 
+	
+						<article class="work-history-record hp">
+							<header>
+								<h2>Firmware Test Engineer</h2>
+								<strong>Hewlett-Packard</strong>
+								<aside>January 2007 &mdash; August 2007</aside>
+							</header>
+	
+							<div class="project">
+								<h3>Superdome 2 Management Firmware Test Infrastructure</h3>
+								<p>
+									Used Perl and MySQL to design, implement, and maintain a test infrastructure which supported other test developers.
+								</p>
+								<p>
+									Designed and implemented a MySQL schema for test log storage and result analytics web applications. 
+									Database design was optomized to 4th normal form using knowledge and techniques from Database in Depth by CJ Date. 
+									Date was a protegé of the father of the relational model, EF Codd. 
+									Database was tuned using diagnostic tools and techniques like MyTop, query cache monitoring, and cache sizing modifications.
+								</p>
+								<p>
+									Test results, metrics displays, and triage data were presented and edited from small web applications. 
+									These smal web applications were also built using Perl, MySQL, CSS, HTML, and JavaScript.
+								</p>
+							</div>
+						</article> 
 
-					<article class="work-history-record hp">
-						<header>
-							<h2>System Validation Test Engineer</h2>
-							<strong>HP</strong>
-							<aside>June 2005 &mdash; December 2006</aside>
-						</header>
- 
-						<div class="project">
-							<h3>System Validation Test</h3>
-							<p>
-								Wrote test code using TCL/Expect, shell and Perl to perform a variety tests on HP SuperDome products. 
-								Automation included functional and stress tests. 
-								Configuration inventory, programmatic configuration, and state discovery was used on tests and reused in 
-								several groups for other testing and development by QA and hardware design engineers. 
-								Tests were performed at system management firmware, OS interface firmware, and OS levels. 
-								Tests at the OS level were performed on HPUX, Linux, and Open VMS Operating Systems. 
-								Manual tests were performed on Datacenter and Enterprise versions of Windows.
-							</p> 
-						</div>
-						<div class="project">
-							<h3>Q &mdash; System Validation Test Orchestrator</h3>
-							<p>
-								Rewrote most of an internal test queuing and launching TCL/TK GUI utility. 
-								Created a web (Perl) based front end for <a href="http://burtleburtle.net/bob/math/jenny.html">jenny</a>, 
-								a pairwise set generation tools to aid combinatorial test planning. 
-							</p>
-						</div>
-					</article>
-				</div>
-			</section>
-			<section class="personal-projects">
-				<h1>Projects</h1>
-				<div class="section-content">
-					<article class="project land-or-die">
-						<h3>Land or Die!</h3>
-					</article>
-					<article class="project raycaster">
-						<h3>JavaScript Raycaster</h3>
-					</article>
-					<article class="project mastering-react">
-						<h3>Mastering React Book</h3>
-					</article>
-					<article class="project js-game-workshop">
-						<h3>JavaScript Game Workshop <!-- lilgame --></h3>
-					</article>
-				</div>
-			</section>
-			<section class="hobbies">
-				<h1>Hobbies</h1>
-				<div class="section-content">
-					<ul>
-						<li>Collecting, restoring, and modifying video game consoles, games, and CRT televisions and monitors.</li>
-						<li>Hobbyist coding, including dabbling with game development.</li>
-						<li>Woodworking.</li>
-						<li>Home improvement.</li>
-						<li>Esoteric knowledge.</li>
-					</ul>
-				</div>
-			</section>
-		</main>
+						<article class="work-history-record hp">
+							<header>
+								<h2>System Validation Test Engineer</h2>
+								<strong>HP</strong>
+								<aside>June 2005 &mdash; December 2006</aside>
+							</header>
+	
+							<div class="project">
+								<h3>System Validation Test</h3>
+								<p>
+									Wrote test code using TCL/Expect, shell and Perl to perform a variety tests on HP SuperDome products. 
+									Automation included functional and stress tests. 
+									Configuration inventory, programmatic configuration, and state discovery was used on tests and reused in 
+									several groups for other testing and development by QA and hardware design engineers. 
+									Tests were performed at system management firmware, OS interface firmware, and OS levels. 
+									Tests at the OS level were performed on HPUX, Linux, and Open VMS Operating Systems. 
+									Manual tests were performed on Datacenter and Enterprise versions of Windows.
+								</p> 
+							</div>
+							<div class="project">
+								<h3>Q &mdash; System Validation Test Orchestrator</h3>
+								<p>
+									Rewrote most of an internal test queuing and launching TCL/TK GUI utility. 
+									Created a web (Perl) based front end for <a href="http://burtleburtle.net/bob/math/jenny.html">jenny</a>, 
+									a pairwise set generation tools to aid combinatorial test planning. 
+								</p>
+							</div>
+						</article>
+					</div>
+				</section>
+				<section class="personal-projects">
+					<h1>Personal Projects</h1>
+					<div class="section-content">
+						<article class="project land-or-die">
+							<h3>Land or Die!</h3>
+						</article>
+						<article class="project raycaster">
+							<h3>JavaScript Raycaster</h3>
+						</article>
+						<article class="project mastering-react">
+							<h3>Mastering React Book</h3>
+						</article>
+						<article class="project js-game-workshop">
+							<h3>JavaScript Game Workshop <!-- lilgame --></h3>
+						</article>
+					</div>
+				</section>
+				<section class="hobbies">
+					<h1>Hobbies</h1>
+					<div class="section-content">
+						<ul>
+							<li>Collecting, restoring, and modifying video game consoles, games, and CRT televisions and monitors.</li>
+							<li>Hobbyist coding, including dabbling with game development.</li>
+							<li>Woodworking.</li>
+							<li>Home improvement.</li>
+							<li>Esoteric knowledge.</li>
+						</ul>
+					</div>
+				</section>
+			</main>
 		</div>
 	</body>
 </html>
