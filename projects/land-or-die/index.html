@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="../../vendor/Skeleton-2.0.4/css/normalize.css" />
+		<link rel="stylesheet" href="../../vendor/Skeleton-2.0.4/css/skeleton.css" />       
+		<!--<link rel="stylesheet" href="./land-or-die.css" />-->
+	</head>
+	<body>
+		<aside>
+			<p>
+				This was originally posted 
+				<a href="https://web.archive.org/web/20130226151410/http://digitalicarus.posterous.com/land-or-die-1gam-january-entry">
+					in January 2013 as a posterous blog
+				</a>
+				and has been transferred and transformed here.
+			</p>
+			<p>
+				It was made as the first attempt to complete a game along with the 
+				other folks making games as a community in the <a href="https://onegameamonth.com/">One Game a Month</a>
+				project. This community is basically an eternal game jam to make video games, board games,
+				interactive fiction, etc.
+			</p>
+		</aside>
+		<header>
+			<div class="title-image">&nbsp;</div>
+			<div class="gameplay-image">&nbsp;</div>
+		</header>
+		<main>
+			<section class="game-section">
+				<h1>The Game</h1>
+				<p>
+					Land or Die! is a lunar lander game with dynamically generated terrain.<br/>
+					<a href="http://github.com/digitalicarus/lander">Source Code</a>
+					<a href="/lander">PLAY IT HERE!</a>
+				</p>
+				<section class="rules-section">
+					<h2>Rules</h2>
+					<p>
+						<ul>
+							<li>Start with 500 fuel units.</li>
+							<li>Land with and angle < 5&deg; and a total velocity < 10.</li>
+							<li>Rack up as many points as possible by landing with minimum rotation and speed on the largest multiplier pads.</li>
+							<li>Crashing results in retry of the current landscape.</li>
+							<li>Escape from the screen by flying off the top to try a different landscape at the expense of fuel.</li>
+						</ul>
+					</p>
+				</section>
+				<section class="scoring-section">
+					<h2>Scoring</h2>
+					<p>
+						A small point counter increments as long as you survive. In addition, you can earn points in these ways:
+						<ul>
+							<li>Successful Landing Bonus: 50 points x multiplier pad value</li>
+							<li>Smooth Landing Bonus: 10 points x (10 - Velocity)</li>
+							<li>Landing Pad Crash Bonus: 10 points</li>
+							<li>Terrain Crash Bonus: 5 points</li>
+						</ul>
+					</p>
+				</section>
+			</section>
+			<section class="development-section">
+				<h1>Development</h1>
+				<section class="concept-section">
+					<h2>Concept</h2>
+					<p>
+						I always wanted to participate in a weekend game jam but had neither the experience nor the discipline. 
+						OneGameAMonth (1GAM) is an excellent opportunity to commit to making a game a month, which sounds like a very difficult undertaking at a glance. 
+						However, it's organized very well and has a community and gamification system that keeps the journey inspiring, fresh, and supportive.
+					</p>
+					<p>
+						As a web developer, I have dabbled with some components that could be part of a game, but never followed through a game to completion. 
+						A while back, I was dabbling with believable terrain generation using a 
+						<a href="https://web.archive.org/web/20130306143134/http://www.gameprogrammer.com/fractal.html">midpoint displacement algorithm</a>. 
+						The original intent was to make a Scorched Earth clone using web technologies. I prototyped the terrain in 
+						<a href="http://jsfiddle.net/digitalicarus/JNzbt/5/">jsfiddle</a>. 
+						It languished there for some time.
+					</p>
+					<p>
+						When 1GAM came up, I thought to myself that a bit of physics and the terrain generator would make a good lunar lander game. 
+						I later discovered that the inspiration for the game, the 1979 Atari cabinet, actually had pre-determined terrain and scrolled. 
+						Initially the game was also going to be mobile friendly. 
+						I postponed that plan when I found there's no way to prevent the iOS safari browser from rotating. 
+					</p>
+				</section>
+			</section>
+			<section class="design-section">
+				<h2>Design</h2>
+
+				<h3>No images!</h3>
+					<p>
+						I decided to make the game true to its vector roots by doing all of the graphics using Cartesian coordinates 
+						and <pre class="inline-code">lineTo</pre> in canvas. 
+						I had also earlier created a <a href="https://gist.github.com/digitalicarus/2597702">JavaScript game loop</a> 
+						by piecing together information from gamedev.net
+					</p>
+					<p>
+						The "sprites" in the game consist of an array of object. 
+						Each object has the 2d Cartesian coordinates for a part of the "sprite" along with the color for the line/path.
+					</p>
+				<h3>The lander</h3>
+					<p>
+						To make things easier on myself, the lander was drawn on graph paper with a typical algebra coordinate plane from schoolin' days. Originally, I had planned to do dynamic zooming. Because of this I envisioned the lander being very small to start. So, I made the "sprites" so that each path could be colored and made the "head" of the lander red to judge orientation.
+					</p>
+				<h3>Fonts</h3>
+					<p>
+						Fonts are basically just sprites and can be displayed in succession. The font table is a large list of paths that are turned into "sprites". I wanted to create other glyphs besides typical alpha-numerics and had issued with my shared host and unicode being delivered to the browser with the correct character encoding, so I hacked together a tag system to translate <up> to  ↑, for instance.
+					</p>
+				<h3>Audio</h3>
+					<p>
+						Audio on the web is a bit of a mess. 
+						I found that there's an issue with the audio tag that makes gapless looping not function. 
+						So, I found a repo on github called <a href="https://github.com/Hivenfour/SeamlessLoop">Seamless loop</a> 
+						that encapsulated all the various browser gap timings and hacked it into the game with minor modifications for volume adjustment. 
+						This was used for the engine thrust sound. 
+						The noise for the sound was created using the noise track for the popular NES sound tracker Famitracker.
+					</p>
+					<p>
+						For the voice, I used a <a href="http://www.oddcast.com/home/demos/tts/tts_example.php?sitepal">text-to-speech</a> site. 
+						I found that the Australian voice, Alan, enunciated the best.
+					</p>
+					<p>
+						The "music" at the start of the game was thrown together in Famitracker, as was the velocity warning. 
+					</p>
+					<p>
+						The low fuel warning is the recognizable code red klaxon from the original Star Trek series. 
+					</p>
+				<h3>Key Bindings</h3>
+					<p>
+						The keypress mechanism is a simple latching system. 
+						Keys are registered with Keys.on or Keys.off. 
+						When a keydown event is captured it's checked against the registry and latched. 
+						When the keyup event is captures it's stored in the off latch. Keys.run runs the functions registered in the latches.
+					</p>
+				<h3>Title Screen</h3>
+					<p>
+						This was pared back as well. Originally I wanted you to be able to practice the controls with the lander on the title screen. 
+					</p>
+				<h3>Notes</h3>
+				<p>
+					<img src="assets/image.jpeg" />
+				</p>
+				<p>
+					<img src="assets/image_1.jpeg" />
+				</p>
+				<p>
+					<img src="assets/image_2.jpeg" />
+				</p>
+				<p>
+					<img src="assets/image_3.jpeg" />
+				</p>
+				<p>
+					<img src="assets/image_4.jpeg" />
+				</p>
+				<p>
+					<img src="assets/image_5.jpeg" />
+				</p>
+			</section>
+		</main>
+	</body>
+</html>

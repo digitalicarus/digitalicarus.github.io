@@ -1,0 +1,26 @@
+/*https://vistaserv.net/blog/90s-fonts-modern-browsers*/
+body {
+	background-image: url('http://art.teleportacia.org/observation/vernacular/stars/ss035.gif');
+    background-size: contain;
+	/*font-family: 'Montserrat', 'Cutive Mono', 'Space Mono', monospace;*/
+	color: #eef;
+	color: #08c308;
+	font-weight: 300;
+}
+
+header {
+	display: flex;
+	height: 300px;
+}
+header > .title-image, .gameplay-image {
+	background-repeat: no-repeat;
+	flex: 1;
+	background-size: 100%;
+	background-position: center;
+}
+header > .title-image {
+	background-image: url(assets/2013_jan_26_lander_title.png);
+}
+header > .gameplay-image {
+	background-image: url(assets/2013_jan_26_lander_gameplay.png);
+}

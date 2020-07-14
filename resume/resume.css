@@ -195,6 +195,36 @@ section.personal-projects .project {
 section.personal-projects .project h3:before {
 	background-image: url('../assets/wing.svg');
 }
+section.personal-projects .links {
+    margin: 0 0 40px 0;
+}
+section.personal-projects .links .link-btn {
+	margin-right: 10px;
+}
+section.personal-projects .print-links {
+	display: none;
+}
+
+.link-btn {
+	display: inline-block;
+	border-radius: 4px;
+	padding: 0 20px;
+    color: #FFF;
+    background-color: #33C3F0;
+    border-color: #33C3F0;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.link-btn:hover {
+    color: #FFF;
+    background-color: #1EAEDB;
+    border-color: #1EAEDB;
+}
 
 @media screen and (max-width: 1024px) {
 	.main-container {
@@ -221,7 +251,10 @@ section.personal-projects .project h3:before {
 }
 
 @media print {
-	.resume-url {
+	section.personal-projects .links {
+		display: none;
+	}
+	.resume-url, section.personal-projects .print-links {
 		display: block;
 	}
 }

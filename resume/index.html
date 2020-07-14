@@ -13,7 +13,7 @@
 			<a class="resume-url" href=".">http://digitalicarus.com/resume</a>
 			<header>
 				<section class="objective">
-					I constantly nurture my creative expertise in computing and technical topics. 
+					Constantly nurturing my creative expertise in computing and technical topics. 
 					I'm a self-starter, capable of adapting and learning anything very quickly. 
 					As a hobbyist, my leisure activities often enhance my performance at work.
 				</section>
@@ -331,7 +331,7 @@
 								<h3>Q &mdash; System Validation Test Orchestrator</h3>
 								<p>
 									Rewrote most of an internal test queuing and launching TCL/TK GUI utility. 
-									Created a web (Perl) based front end for <a href="http://burtleburtle.net/bob/math/jenny.html">jenny</a>, 
+									Created a web (Perl) based front end for <a target="_blank" href="http://burtleburtle.net/bob/math/jenny.html">jenny</a>, 
 									a pairwise set generation tools to aid combinatorial test planning. 
 								</p>
 							</div>
@@ -342,16 +342,112 @@
 					<h1>Personal Projects</h1>
 					<div class="section-content">
 						<article class="project land-or-die">
-							<h3><a href="/lander">Land or Die!</a></h3>
+							<h3>Land or Die! (2013)</h3>
+							<p>
+								A Lunar Lander game done for One Game a Month. The idea was to mimick vector graphics similar
+								to the original Atari arcade game. This one is in color and features randomly generated terrain.
+							</p>
+							<p>
+								WASD controls with Q and E to strafe left and right respectively.
+							</p>
+							<div class="print-links">
+								<strong>Play Game:</strong> digitalicarus.com/lander <br/>
+								<strong>View Source:</strong> github.com/digitalicarus/lander
+							</div>
+							<div class="links">
+								<a href="/lander" target="_blank" class="link-btn">Play It</a>
+								<a href="http://github.com/digitalicarus/lander" target="_blank" class="link-btn">View Source</a>
+							</div>
 						</article>
 						<article class="project raycaster">
-							<h3><a href="/caster">JavaScript Raycaster</a></h3>
-						</article>
-						<article class="project mastering-react">
-							<h3><a href="https://www.packtpub.com/web-development/mastering-react">Mastering React Book</a></h3>
+							<h3>JavaScript Raycaster (2013)</h3>
+							<p>
+								A raycasting proof of concept using a technique used in Wolfenstein 3d and Catacombs 3d. 
+								I was inspired by the 
+								<a target="_blank" href="https://permadi.com/1996/05/ray-casting-tutorial-table-of-contents/">Permadi</a> 
+								and <a target="_blank" href="https://lodev.org/cgtutor/raycasting.html">Lodev tutorials</a>.
+								Once again, I wanted to use the original techniques instead of OpenGL/WebGL so this uses the
+								2D canvas context.
+								<br/>
+								This also uses the field of view and user rotation configuration to precalculate trig tables, which
+								makes the texture lookup quite fast.
+							</p>
+							<div class="print-links">
+								<strong>Play Demo:</strong> digitalicarus.com/caster <br/>
+								<strong>View Source:</strong> github.com/digitalicarus/caster
+							</div>
+							<div class="links">
+								<a href="/caster" target="_blank" class="link-btn">Play It</a>
+								<a href="http://github.com/digitalicarus/caster" target="_blank" class="link-btn">View Source</a>
+							</div>
 						</article>
 						<article class="project js-game-workshop">
-							<h3><a href="/lilgame">JavaScript Game Workshop</a> <!-- lilgame --></h3>
+							<h3>JavaScript Game Workshop (2013)</h3>
+							<p>
+								As I explored browser-based games more and more I sought out others locally.
+								I wanted to share and explore with other people so I started a group called Austin Web Games.
+								Shortly into the endeaver, after two meetups, I realized that there was a lot of interest but 
+								not a lot of people actively exploring making browser-based games. 
+								<br/>
+								So, I hosted a workshop where I explained how simple game loops and physics worked. I supplied
+								the most minimal pure JS platforming game that I could. 
+								<br/>
+								The plan was to have everyone fork the repo and make some creative changes. People seemed
+								happy and had a lot of fun. There were a couple father-son teams too.
+							</p>
+							<div class="print-links">
+								<strong>Play Game:</strong> digitalicarus.com/lilgame <br/>
+								<strong>View Source:</strong> github.com/digitalicarus/lilgame
+							</div>
+							<div class="links">
+								<a href="/lilgame" target="_blank" class="link-btn">Play It</a>
+								<a href="http://github.com/digitalicarus/lilgame" target="_blank" class="link-btn">View Source</a>
+							</div>
+						</article>
+						<article class="project thunderplains-talk">
+							<h3>Thunderplains 2013 Conference Talk</h3>
+							<p>
+								I wanted to make a talk that was inspiring and wouldn't be stuck to the particular place and time in
+								web development. 
+								<br/>
+								The theme of the talk is to look at old tech and techniques to get inspired. In it I describe my
+								travels through older tech books to learn interesting techniques to apply in modern languages and 
+								contexts. I encourage listeners to examine old algorithms and techniques to expand their minds,
+								have fun, or apply an old technique to a new problem or context.
+								<br/>
+								The presentation was handcrafted to resemble Windows 98 PowerPoint and I used a JavaScript
+								implementation of Microsoft Office's famous Clippy assistant to remind myself and watchers of the
+								presentation of the notes I had made for each slide.
+							</p>
+							<div class="print-links">
+								<strong>See Slides:</strong> digitalicarus.com/thunderplains2013 <br/>
+								<strong>View Source:</strong> github.com/digitalicarus/thunderplains2013
+							</div>
+							<div class="links">
+								<a href="/thunderplains2013" target="_blank" class="link-btn">See the Slides</a>
+								<a href="http://github.com/digitalicarus/thunderplains2013" target="_blank" class="link-btn">View Source</a>
+							</div>
+						</article> 
+						<article class="project mastering-react">
+							<h3>Mastering React (2016)</h3>
+							<p>
+								Co-wrote the majority of this book. It was early days of React and the ecosystem was very volitile.
+								I rewrote many portions many times as the APIs and idiomatic recommendations shifted.
+							</p>
+							<p>
+								I wrote chapters 4 through 10 and my very good friend wrote an excellent forward.
+							</p>
+							<p>
+								Unfortunately the book was somewhat dated as soon as it hit shelves due to the nature of front-end
+								dev generally and React specifically, but now I know what it's like to write a tech book with
+								very volatile tech.
+							</p>
+							<div class="print-links">
+								<strong>Amazon:</strong> https://tinyurl.com/mastering-react
+							</div>
+							<div class="links">
+								<a href="https://www.amazon.com/Mastering-React-Adam-Horton/dp/1783558563" class="link-btn">See it on Amazon</a>
+							</div>
 						</article>
 					</div>
 				</section>
