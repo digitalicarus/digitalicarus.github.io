@@ -26,14 +26,15 @@ body * {
 	display: none;
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .main-container > header {
 	display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 .objective {
